@@ -1,0 +1,38 @@
+node_modules
+yarn.lock
+package-lock.json
+.env
+.DS_Store
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+
+/vendor
+/bower_components
+/_site
