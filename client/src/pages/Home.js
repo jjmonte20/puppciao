@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
-import LoginForm from '../components/Form/LoginForm';
 import Signup from '../components/Form/Signup';
 import API from '../utils/API';
 
@@ -20,7 +19,6 @@ class Home extends Component {
         API.loginUser(this.state)
             .then((user) => {
                 this.setState({ user: user.data });
-                console.log(this.state.user);
             })
             .catch(() => {
                 console.log("Please check email or password");
@@ -39,7 +37,9 @@ class Home extends Component {
     logout = () => {
         API.logoutUser().then(res => {
             console.log(res);
-            window.location.assign("/");
+            this.setState({
+                user: ''
+            })
         })
     }
 

@@ -18,7 +18,6 @@ class LoginForm extends Component {
         API.loginUser(this.state)
             .then((user) => {
                 this.setState({ user: user.data });
-                console.log(this.state.user);
                 this.props.checkAuth(this.state.user);
             })
             .catch(() => {
