@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Homepage from './pages/HomePage';
+import Home from './pages/Home';
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
@@ -11,7 +11,7 @@ function App() {
         <Nav />
         <Switch>
           {/* regular paths */}
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/" component={Home} />
           {/* dynamic paths */}
           {/* <Route exact path="/books/:id" component={Detail} /> */}
           {/* no match */}
