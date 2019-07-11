@@ -19,6 +19,7 @@ class LoginForm extends Component {
             .then((user) => {
                 this.setState({ user: user.data });
                 console.log(this.state.user);
+                this.props.checkAuth(this.state.user);
             })
             .catch(() => {
                 console.log("Please check email or password");
