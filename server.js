@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Session and passport initializing
-app.use(session({ secret: " bongo Cat ", resave: true, saveUninitialize: true}));
+app.use(session({ secret: " bongo Cat ", resave: true, saveUninitialize: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -27,7 +27,7 @@ app.use(passport.session());
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/puppyciao");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/puppyciao", { useNewUrlParser: true });
 
 // Start the API server
 app.listen(PORT, function() {
