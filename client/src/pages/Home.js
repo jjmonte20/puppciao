@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-import Box from "@material-ui/core/Box";
+import { Box, Container, Grid } from "@material-ui/core";
 
 class Home extends Component {
     render() {
         return(
             <Box>
-                <h1>Welcome to puppyciao</h1>
+                <Container>
+                    <Grid item spacing={1}>
+                    <h1>Welcome to puppyciao</h1>
+                    </Grid>
+                </Container>
             </Box>
         );
     }
