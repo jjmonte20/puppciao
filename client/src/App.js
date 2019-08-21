@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <div>
+        <NavBar />
         <Switch>
-          <NavBar />
           {/* regular paths */}
           <Route exact path="/" component={Home} />
           {/* dynamic paths */}
