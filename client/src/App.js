@@ -2,7 +2,8 @@ import React from "react";
 import NavBar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/styles";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
+import Quiz from "./pages/Quiz/Quiz";
 
 const theme = {
 
