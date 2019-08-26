@@ -1,0 +1,79 @@
+Want to make a quiz that is comprehensive, but also fits 
+what a user is looking for in a dog
+
+
+Physical Characteristics
+
+How big will household's ideal dog be at full size?
+    answers: 
+        small or toy size - 2 to 22 pounds (1-10 kg)
+        medium dog size - 24 to 57 pounds (11-26 kg)
+        large dog size - 59 to 98 pounds (27-44 kg)
+        giant dog size - 99 pounds or more (45 kg+)
+
+-- This will help narrow down pup size --
+
+What age group best fits the dog that would be invited into your home today?
+    answers:
+        puppy - 8 weeks to 18 months of age depending on the dog
+        adolescence - 6 months to 18 months of age depending on the dog
+        adult - 1 year to 10 years of age depending on the dog
+        senior - starting from 6 to 10 years of age depending on the dog
+
+-- ages blend in description for user but will math out to be distict in actual answers --
+
+How much grooming are you willing to do for your dog?
+    answers:
+        low maintenance - brushing every few weeks, 2-4 months between baths, standard nail trimming and care
+        high maintenance - weekly brushing, willing to handle breed specific maintenance     
+
+-- This can be a boolean, but will be a multiple choice to future proof the answer selection
+
+How much will drool bother you?
+    answers:
+        I really don't like it
+        Not my favorite, but I can deal with it for the right dog
+        Not one bit
+
+-------------------------------------------------
+
+Dog Behavior
+
+- This section will best answer what kind of behavoir the user is willing to train or deal with when the dog is an adult
+
+What physical activity level best represents your regular routine?
+    answers:
+        Active less than 15 minutes a day
+        Active about 15-30 minutes every day
+        Active about 30 minutes to an hour every day
+        Active more that an hour a day
+
+How smart would you like your dog to be?
+    answers:
+        not that smart
+        pretty smart
+        smarter than me
+
+Do you have any toddlers (0 - 3) Are you planning on bringing a new baby into your home?
+    answers:
+        No
+        Yes
+
+How old are the children in your home?
+    answers:
+        I don't have any children
+        7 and under
+        8 and older
+        I have children in both ranges
+
+-- In this question dog should be adaptable to age ranges
+
+What is your plan for training your future dog?
+    answers:
+        Teaching the basics on behavior and maybe a few tricks
+        Make training an ongoing process, my dog will be a lifelong student
+
+How would you describe your dog parenting style?
+    answers:
+        I'd like to keep a low key style
+        I'll set my boundaries, but I'd like to spend time playing with my dog as well
