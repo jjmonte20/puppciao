@@ -17,6 +17,7 @@ function App() {
           <Switch>
             {/* regular paths */}
             <Route exact path="/" component={Home} />
+            <Route exact path="/pquiz" component={Quiz} />
             {/* dynamic paths */}
             {/* <Route exact path="/books/:id" component={Detail} /> */}
             {/* no match */}
