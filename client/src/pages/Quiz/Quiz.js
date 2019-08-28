@@ -10,9 +10,26 @@ class Quiz extends Component {
         
     }
 
+    renderQuestions = () => {
+        return (
+            <div>
+                {Questions.map(q => (
+                    <div>
+                        <h3>{q.qBlob}</h3>
+                        {q.a.map(a => (
+                            <p>{a.desc}</p>
+                        ))}
+                    </div>
+                ))}
+            </div>
+        )
+    }
+
     render() {
         return(
-            <h1>Hello World</h1>
+            <div>
+                {this.renderQuestions()}
+            </div>
         )
     }
 }
