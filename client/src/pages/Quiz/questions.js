@@ -1,5 +1,6 @@
 const questions = [
     {
+        id: "dogSize",
         qBlob: "How big will household's ideal dog be at full size?",
         a: [
             {
@@ -21,6 +22,7 @@ const questions = [
         ] 
     },
     {
+        id: "dogAge",
         qBlob: "What age group best fits the dog that would be invited into your home today?",
         a: [
             {
@@ -41,7 +43,8 @@ const questions = [
             }
         ] 
     },
-    {
+    {   
+        id: "fur",
         qBlob: "How much grooming are you willing to do for your dog?",
         a: [
             {
@@ -55,6 +58,7 @@ const questions = [
         ] 
     },
     {
+        id: "drool",
         qBlob: "How much will drool bother you?",
         a: [
             {
@@ -72,6 +76,7 @@ const questions = [
         ] 
     },
     {
+        id: "pA",
         qBlob: "What physical activity level best represents your regular routine?",
         a: [
             {
@@ -93,6 +98,7 @@ const questions = [
         ] 
     },
     {
+        id: "dogInt",
         qBlob: "How smart would you like your dog to be?",
         a: [
             {
@@ -110,6 +116,7 @@ const questions = [
         ] 
     },
     {
+        id: "baby",
         qBlob: "Do you have any toddlers (0 - 3) Are you planning on bringing a new baby into your home?",
         a: [
             {
@@ -123,6 +130,7 @@ const questions = [
         ] 
     },
     {
+        id: "kidAge",
         qBlob: "How old are the children in your home?",
         a: [
             {
@@ -144,6 +152,7 @@ const questions = [
         ] 
     },
     {
+        id: "training",
         qBlob: "What is your plan for training your future dog?",
         a: [
             {
@@ -157,6 +166,7 @@ const questions = [
         ] 
     },
     {
+        id: "parent",
         qBlob: "How would you describe your dog parenting style?",
         a: [
             {
