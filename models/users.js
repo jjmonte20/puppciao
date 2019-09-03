@@ -10,7 +10,26 @@ const UserSchema = new Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    email: {
+        type: String,
+        required: true,
+    },
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    answers: [],
+    favoriteDogs: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "FavoriteDog"
+        }
+    ]
 });
 
 UserSchema.methods.validPassword = function(password) {
@@ -22,7 +41,6 @@ UserSchema.pre('save', function(next) {
     let user = this;
     // use language from the libary for salting the password
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
-    // console.log(user.password);
     console.log(user);
     // return user.password;
     next();
